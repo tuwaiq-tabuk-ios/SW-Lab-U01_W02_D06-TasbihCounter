@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TasbihCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="BackgroundView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tasbih" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoH-07-d6J" userLabel="TitleLabel">
+                                <rect key="frame" x="64" y="109" width="287" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aPN-Nf-CN4"/>
+                                    <constraint firstAttribute="width" constant="200" id="lcM-rC-KXH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SignPainter-HouseScript" family="SignPainter" pointSize="100"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <color key="highlightedColor" red="1" green="0.87752205579999998" blue="0.96400187950000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8T-w8-vgn" userLabel="DisplayLabel">
+                                <rect key="frame" x="117" y="292" width="180" height="180"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Dcm-Hb-zi1"/>
+                                    <constraint firstAttribute="height" constant="180" id="b6N-Yp-qv8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="240"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="in0-mT-h7X" userLabel="BackButton">
+                                <rect key="frame" x="70" y="499" width="56" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="arrow.counterclockwise" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                                    <color key="baseBackgroundColor" red="1" green="0.95720231820000001" blue="0.99788519310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="discountPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZN-U2-Kly"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRD-lH-S7y" userLabel="RestButton">
+                                <rect key="frame" x="296" y="499" width="67" height="44"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="arrow.triangle.2.circlepath" catalog="system">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F5l-JH-9Ok"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9y-hZ-xdO" userLabel="CountButton">
+                                <rect key="frame" x="148" y="617" width="118" height="52"/>
+                                <color key="tintColor" red="1" green="0.87752205579999998" blue="0.96400187950000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePadding="0.0" buttonSize="large">
+                                    <imageReference key="image" image="circle.fill" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="108" scale="large"/>
+                                    <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="counterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLw-OM-9yo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.9572023182403252" blue="0.99788519305178214" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="QRD-lH-S7y" firstAttribute="leading" secondItem="in0-mT-h7X" secondAttribute="trailing" constant="170" id="8K1-iQ-uLQ"/>
+                            <constraint firstItem="YoH-07-d6J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="LMG-gr-Z3i"/>
+                            <constraint firstItem="g8T-w8-vgn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NIf-Sd-aBE"/>
+                            <constraint firstItem="QRD-lH-S7y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="455" id="QKo-2C-rjM"/>
+                            <constraint firstItem="N9y-hZ-xdO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="569" id="TFt-rC-1MD"/>
+                            <constraint firstItem="QRD-lH-S7y" firstAttribute="centerY" secondItem="in0-mT-h7X" secondAttribute="centerY" id="ThC-cB-cB4"/>
+                            <constraint firstItem="YoH-07-d6J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="UNT-dc-8d5"/>
+                            <constraint firstItem="in0-mT-h7X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="WdD-RS-hKx"/>
+                            <constraint firstItem="QRD-lH-S7y" firstAttribute="leading" secondItem="in0-mT-h7X" secondAttribute="trailing" constant="170" id="WqX-Xc-CMl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QRD-lH-S7y" secondAttribute="trailing" constant="70" id="b1G-qJ-qaM"/>
+                            <constraint firstItem="YoH-07-d6J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dB1-X9-jPk"/>
+                            <constraint firstItem="g8T-w8-vgn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="dnQ-GW-a4J"/>
+                            <constraint firstItem="in0-mT-h7X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="455" id="era-U3-o7g"/>
+                            <constraint firstItem="N9y-hZ-xdO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sk4-X4-9Kd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="g8T-w8-vgn" id="IyZ-qW-U0W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
