@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,38 +18,44 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbih " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrs-q1-ctc" userLabel="Tasbih">
                                 <rect key="frame" x="108.33333333333333" y="94" width="197.33333333333337" height="75.333333333333314"/>
                                 <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="68"/>
-                                <color key="textColor" systemColor="systemBrownColor"/>
+                                <color key="textColor" red="0.82770000539999999" green="0.69927934349999998" blue="0.51560529420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rr-hD-ngZ">
-                                <rect key="frame" x="90" y="555" width="31.666666666666671" height="38"/>
+                                <rect key="frame" x="90" y="555" width="26" height="38"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise.circle" catalog="system" imagePlacement="bottom" title="">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.counterclockwise" catalog="system" imagePlacement="bottom" title="">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" weight="bold"/>
-                                    <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="baseForegroundColor" red="0.94862948120000001" green="0.97405010459999997" blue="0.84293100580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="discountpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSz-9k-fKt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzp-KV-HV0">
-                                <rect key="frame" x="267.66666666666669" y="555" width="56.333333333333314" height="38"/>
+                                <rect key="frame" x="262" y="555" width="62" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ef6-kr-eF8"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath.circle" catalog="system" title="">
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system" title="">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" weight="bold"/>
-                                    <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="baseForegroundColor" red="0.94862948120000001" green="0.97405010459999997" blue="0.84293100580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="resetpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Oi-A7-bvg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-z3-zHH">
-                                <rect key="frame" x="90" y="633" width="234" height="50"/>
+                                <rect key="frame" x="90" y="633" width="234" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0bx-HR-1gW"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="play.circle" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" weight="bold"/>
-                                    <color key="baseForegroundColor" systemColor="opaqueSeparatorColor"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" weight="bold"/>
+                                    <color key="baseForegroundColor" red="0.94862948120000001" green="0.97405010459999997" blue="0.84293100580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="counterpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyg-Ic-hKT"/>
@@ -59,12 +64,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juo-VS-arO">
                                 <rect key="frame" x="100" y="229.33333333333337" width="214" height="175.66666666666663"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="147"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <color key="textColor" red="0.96848052740000001" green="0.88177390180000004" blue="0.611828908" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" red="0.54269179720000005" green="0.54161471530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="tzp-KV-HV0" firstAttribute="top" secondItem="juo-VS-arO" secondAttribute="bottom" constant="150" id="6QF-Wu-mZ5"/>
                             <constraint firstItem="1Rr-hD-ngZ" firstAttribute="top" secondItem="juo-VS-arO" secondAttribute="bottom" constant="150" id="F4Z-y6-Qhm"/>
@@ -73,12 +78,14 @@
                             <constraint firstItem="Rrs-q1-ctc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="SaY-5F-4Mw"/>
                             <constraint firstItem="Rrs-q1-ctc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ag7-fc-ZM8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b1E-z3-zHH" secondAttribute="trailing" constant="90" id="eNi-6b-f11"/>
+                            <constraint firstItem="tzp-KV-HV0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="511" id="ggE-CT-Eq5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tzp-KV-HV0" secondAttribute="trailing" constant="90" id="hvu-wI-6KZ"/>
                             <constraint firstItem="1Rr-hD-ngZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="mgg-hE-QJt"/>
                             <constraint firstItem="b1E-z3-zHH" firstAttribute="top" secondItem="1Rr-hD-ngZ" secondAttribute="bottom" constant="40" id="o1H-JM-ws6"/>
                             <constraint firstItem="b1E-z3-zHH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rSr-7k-RDH"/>
                             <constraint firstItem="juo-VS-arO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="xMJ-fR-lE7"/>
                             <constraint firstItem="juo-VS-arO" firstAttribute="top" secondItem="Rrs-q1-ctc" secondAttribute="bottom" constant="60" id="y1e-VJ-mXm"/>
+                            <constraint firstItem="1Rr-hD-ngZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="511" id="yZN-gt-Ey9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -99,20 +106,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.clockwise.circle" catalog="system" width="128" height="121"/>
-        <image name="arrow.triangle.2.circlepath.circle" catalog="system" width="128" height="121"/>
-        <image name="play.circle" catalog="system" width="128" height="121"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>
