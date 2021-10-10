@@ -1,6 +1,14 @@
 # SW-Lab-U01_W02_D06-TasbihCounter
 Second App consisting of a Tasbih counter.
 
+## Screenshot
+![](https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/1.png)
+![](https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/2.png)![](https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/3.png)
+![](https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/4.png)![](https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/5.png)
+![](https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/6.png)![](https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/7.png)
+
+
+
 ## Topics
 1. Storyboard
 2. UIKit
