@@ -2,6 +2,7 @@
 Second App consisting of a Tasbih counter.
 
 ## Screenshot
+<div>
 <img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/1.png" width="150" height="250" />
 
 <img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/2.png" width="150" height="250" />
@@ -15,7 +16,7 @@ Second App consisting of a Tasbih counter.
 <img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/6.png" width="150" height="250" />
 
 <img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/image/7.png" width="150" height="250" />
-
+</div>
 
 
 ## Topics
