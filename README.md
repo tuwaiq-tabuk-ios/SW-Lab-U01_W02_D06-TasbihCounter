@@ -16,3 +16,6 @@ Second App consisting of a Tasbih counter.
 
 ## Deadline 
 Monday 11th October 9:15 am
+
+![alt text](/Users/aa/Desktop/Simulator Screen Recording - iPhone 12 - 2021-10-10 at 19.06.59.mp4)
+
