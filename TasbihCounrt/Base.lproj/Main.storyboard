@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TasbihCounrt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8Q-Hx-bFQ" userLabel="Tasbih">
+                                <rect key="frame" x="93" y="114" width="229" height="45.5"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pt-rR-S7l">
+                                <rect key="frame" x="34" y="220" width="326" height="126.5"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="106"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-Eq-9tR" userLabel="Left.Button">
+                                <rect key="frame" x="20" y="452" width="71" height="52"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.counterclockwise.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5E-st-zKF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdW-9a-9QU" userLabel="loop.Button">
+                                <rect key="frame" x="144" y="443" width="126" height="318"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="TR2-e6-Z4e"/>
+                                    <constraint firstAttribute="height" constant="318" id="aC5-XN-T44"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.rectangle.fill" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="74"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LoopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xk4-T2-VCu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoA-sU-AkJ" userLabel="Color">
+                                <rect key="frame" x="45" y="771" width="103" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="applepencil" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="64"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydK-Ve-HWb"/>
+                                    <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKX-Kt-afz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwa-Qq-tj9" userLabel="Right.Button">
+                                <rect key="frame" x="323" y="452" width="71" height="52"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.2.circlepath.circle.fill" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WsT-Ep-d7y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CdW-9a-9QU" firstAttribute="top" secondItem="3Pt-rR-S7l" secondAttribute="bottom" constant="96.5" id="3q0-ky-nsx"/>
+                            <constraint firstItem="CdW-9a-9QU" firstAttribute="leading" secondItem="pVp-Eq-9tR" secondAttribute="trailing" constant="34" id="4Xk-xN-MQi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CdW-9a-9QU" secondAttribute="bottom" constant="101" id="5dV-IY-u5X"/>
+                            <constraint firstItem="Zwa-Qq-tj9" firstAttribute="leading" secondItem="CdW-9a-9QU" secondAttribute="trailing" constant="53" id="9o1-12-Fn2"/>
+                            <constraint firstItem="3Pt-rR-S7l" firstAttribute="top" secondItem="d8Q-Hx-bFQ" secondAttribute="bottom" constant="60.5" id="C5U-qC-UTD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d8Q-Hx-bFQ" secondAttribute="trailing" constant="92" id="CKr-dd-q53"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zwa-Qq-tj9" secondAttribute="trailing" constant="20" id="RGu-o8-1bd"/>
+                            <constraint firstItem="pVp-Eq-9tR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="UEw-LY-etP"/>
+                            <constraint firstItem="Zwa-Qq-tj9" firstAttribute="top" secondItem="3Pt-rR-S7l" secondAttribute="bottom" constant="105.5" id="Xji-gh-WJd"/>
+                            <constraint firstItem="d8Q-Hx-bFQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="aCc-EP-dlM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Pt-rR-S7l" secondAttribute="trailing" constant="54" id="ovj-aq-fAv"/>
+                            <constraint firstItem="pVp-Eq-9tR" firstAttribute="top" secondItem="3Pt-rR-S7l" secondAttribute="bottom" constant="105.5" id="qpz-w0-Bv0"/>
+                            <constraint firstItem="3Pt-rR-S7l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="uzm-2h-Dso"/>
+                            <constraint firstItem="d8Q-Hx-bFQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="z7f-1x-SHi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Zero" destination="3Pt-rR-S7l" id="CFf-xb-wxy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-294.20289855072468" y="-264.50892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applepencil" catalog="system" width="128" height="113"/>
+        <image name="arrow.2.circlepath.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.counterclockwise.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
