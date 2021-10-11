@@ -7,11 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class viewController: UIViewController {
   
   @IBOutlet weak var diplayCountLabel : UILabel!
   
   var counter = 0
+  
+  
   
   
   override func viewDidLoad() {
@@ -19,13 +21,9 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view.
   }
   
-  @IBAction func DiscountButton(_ sender: UIButton) {
+  @IBAction func discountButton(_ sender: UIButton) {
     
-    if counter != 0 {
-      counter -= 1
-      diplayCountLabel.text = counter.description
-      print("Number displayed \(counter)")
-    }
+    discountToCounter()
     
   }
   
@@ -52,5 +50,16 @@ class ViewController: UIViewController {
     
     diplayCountLabel.text = counter.description
   }
+  func discountToCounter(){
+    if counter != 0 {
+      counter -= 1
+      diplayCountLabel.text = counter.description
+      print("Number displayed \(counter)")
+      
+    }
+  }
   
 }
+
+
+
