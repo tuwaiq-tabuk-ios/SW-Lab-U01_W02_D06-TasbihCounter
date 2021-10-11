@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +32,7 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                         </state>
                                         <connections>
-                                            <action selector="ResetButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7o-Bp-zcC"/>
+                                            <action selector="resetButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kmd-rN-hCR"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-Lv-2ve" userLabel="Display_label">
@@ -54,7 +54,7 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                         </state>
                                         <connections>
-                                            <action selector="DiscountButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yWm-TR-MF1"/>
+                                            <action selector="discountButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WK2-sU-sPJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tto-18-LWe" userLabel="Count_Button">
@@ -72,7 +72,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="CountButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NoG-yD-ml2"/>
+                                            <action selector="countButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06o-ia-R9H"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -156,8 +156,7 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="36"/>
                                         </state>
                                         <connections>
-                                            <action selector="ColorButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP1-KX-Evj"/>
-                                            <action selector="colorPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Jo-a5-2gw"/>
+                                            <action selector="colorButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yvC-cx-N8g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Db0-Vu-vux">
@@ -190,13 +189,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Target_Button" destination="kcu-nH-ABs" id="WgY-3s-0YP"/>
                         <outlet property="colorButton" destination="9D2-le-TMS" id="H8x-M4-zO4"/>
                         <outlet property="countButton" destination="tto-18-LWe" id="U2l-uD-tRg"/>
                         <outlet property="discountButton" destination="F7F-0I-J8c" id="Ja0-H6-akY"/>
                         <outlet property="displayLabel" destination="WNf-Lv-2ve" id="D4R-S3-ijY"/>
                         <outlet property="infoButton" destination="Db0-Vu-vux" id="sbO-1f-P5r"/>
                         <outlet property="resetButton" destination="Jq3-AF-OLD" id="u67-Yg-lip"/>
+                        <outlet property="target_Button" destination="kcu-nH-ABs" id="WgY-3s-0YP"/>
                         <outlet property="viewItems" destination="410-0y-OwW" id="rZ3-1x-cLn"/>
                     </connections>
                 </viewController>
