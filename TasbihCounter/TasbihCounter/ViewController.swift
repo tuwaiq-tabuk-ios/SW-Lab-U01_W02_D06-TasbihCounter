@@ -60,21 +60,6 @@ class ViewController: UIViewController {
     displayLabel.text = count.description
     print("The result of Reset the Counter is: \(count)")
   }
-  func resetButtonAlert(){
-    if (count == 0)
-    {
-      let resetAlert:UIAlertController = UIAlertController(title: "Warning", message: "The counter has already been reset. ", preferredStyle: UIAlertController.Style.alert)
-      let alertAction:UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil)
-      resetAlert.addAction(alertAction)
-      present(resetAlert, animated: true, completion: nil)
-    }
-    else {
-      let resetAlert:UIAlertController = UIAlertController(title: "Reset Counter", message: "Are you sure you want to reset the counter? ", preferredStyle: UIAlertController.Style.alert)
-      let alertAction:UIAlertAction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler:nil)
-      resetAlert.addAction(alertAction)
-      present(resetAlert, animated: true, completion: nil)
-      
-    }
-  }
+
 }
 
