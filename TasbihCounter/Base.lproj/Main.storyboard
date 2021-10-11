@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tasbih-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Tasbih" customClass="viewController" customModule="TasbihCounter" customModuleProvider="target" colorLabel="IBBuiltInLabel-Orange" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Background_View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoB-oa-TPP" userLabel="DiplayCount_Label">
+                                <rect key="frame" x="40" y="173" width="294" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cv9-CM-j8o" userLabel="DiscountButton">
+                                <rect key="frame" x="16" y="373" width="97" height="74"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.uturn.left.circle" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="discountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U6b-j2-ylP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoH-kr-YIi" userLabel="ResetButton">
+                                <rect key="frame" x="254" y="373" width="97" height="74"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.triangle.2.circlepath.circle" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gup-gi-6Gb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8Q-7T-KwK" userLabel="Title_Label">
+                                <rect key="frame" x="100" y="60" width="174" height="52.5"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemPinkColor"/>
+                                <color key="shadowColor" systemColor="systemRedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtb-VN-TwS" userLabel="diplayCount">
+                                <rect key="frame" x="77" y="509" width="221" height="138"/>
+                                <accessibility key="accessibilityConfiguration" label="diplayCount"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="98" scale="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="countButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHe-3W-WaE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u8Q-7T-KwK" secondAttribute="trailing" constant="101" id="6Gs-xe-ebB"/>
+                            <constraint firstItem="u8Q-7T-KwK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="76d-62-CuV"/>
+                            <constraint firstItem="cv9-CM-j8o" firstAttribute="top" secondItem="XoB-oa-TPP" secondAttribute="bottom" constant="80" id="8BV-62-CSN"/>
+                            <constraint firstItem="Mtb-VN-TwS" firstAttribute="top" secondItem="cv9-CM-j8o" secondAttribute="bottom" constant="62" id="8TI-Jz-7Ur"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mtb-VN-TwS" secondAttribute="trailing" constant="77" id="8bc-Ih-kQJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xoH-kr-YIi" secondAttribute="trailing" constant="24" id="8fB-ws-ic3"/>
+                            <constraint firstItem="XoB-oa-TPP" firstAttribute="top" secondItem="u8Q-7T-KwK" secondAttribute="bottom" constant="60.5" id="SwW-HS-X20"/>
+                            <constraint firstItem="xoH-kr-YIi" firstAttribute="top" secondItem="XoB-oa-TPP" secondAttribute="bottom" constant="80" id="Ytc-xG-yqr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mtb-VN-TwS" secondAttribute="bottom" constant="20" id="awg-zZ-1DS"/>
+                            <constraint firstItem="Mtb-VN-TwS" firstAttribute="top" secondItem="cv9-CM-j8o" secondAttribute="bottom" constant="62" id="cnd-7y-VIF"/>
+                            <constraint firstItem="u8Q-7T-KwK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="etb-YQ-hJj"/>
+                            <constraint firstItem="XoB-oa-TPP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="iGY-X1-HOW"/>
+                            <constraint firstItem="cv9-CM-j8o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kQW-KT-DWL"/>
+                            <constraint firstItem="XoB-oa-TPP" firstAttribute="top" secondItem="u8Q-7T-KwK" secondAttribute="bottom" constant="60.5" id="nbS-Ke-q4X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XoB-oa-TPP" secondAttribute="trailing" constant="41" id="qt0-ZI-pS2"/>
+                            <constraint firstItem="Mtb-VN-TwS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="yar-Cq-Ith"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mtb-VN-TwS" secondAttribute="bottom" constant="20" id="zbl-Hg-I1R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diplayCountLabel" destination="XoB-oa-TPP" id="pGZ-qR-mQP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" userLabel="tasbih" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.875" y="83.450704225352112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.triangle.2.circlepath.circle" catalog="system" width="128" height="121"/>
+        <image name="arrow.uturn.left.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
