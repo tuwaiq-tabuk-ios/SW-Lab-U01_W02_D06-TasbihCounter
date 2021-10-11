@@ -3,7 +3,8 @@ Second App consisting of a Tasbih counter.
 
 
 ## Video
-("https://github.com/maloqbi/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/1.mp4")
+
+https://github.com/maloqbi/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/1.mp4
 
 ## Screenshot
 <div>
