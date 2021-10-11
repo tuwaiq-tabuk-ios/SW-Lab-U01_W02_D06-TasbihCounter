@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnZ-ds-Dbu" userLabel="Display_Label">
-                                <rect key="frame" x="150" y="33.5" width="114" height="156.5"/>
+                                <rect key="frame" x="150" y="244.5" width="114" height="156.5"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="131"/>
                                 <color key="textColor" systemColor="systemBrownColor"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gg-Xu-uDa" userLabel="Reset_Button">
-                                <rect key="frame" x="254" y="250" width="100" height="70"/>
+                                <rect key="frame" x="254" y="461" width="100" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="G9n-fS-0vk"/>
                                     <constraint firstAttribute="width" constant="100" id="TSO-E1-4Nk"/>
