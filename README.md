@@ -1,14 +1,6 @@
 # SW-Lab-U01_W02_D06-TasbihCounter
 Second App consisting of a Tasbih counter.
 
-
-## Video
-
-
-https://user-images.githubusercontent.com/91871806/136754546-fbd19b28-ee1f-4d23-bbfd-8223c3fb94cf.mov
-
-
-
 ## Topics
 1. Storyboard
 2. UIKit
