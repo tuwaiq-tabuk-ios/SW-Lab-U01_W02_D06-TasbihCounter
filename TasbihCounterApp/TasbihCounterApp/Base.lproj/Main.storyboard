@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TasbihCounterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbih" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdA-1L-Jsw" userLabel="Title_Lable">
+                                <rect key="frame" x="140.5" y="177" width="133" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="cff-9Q-VDN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSZ-9D-Ifr" userLabel="Display_Lable">
+                                <rect key="frame" x="181.5" y="308" width="51" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="9Wm-Wc-C9h"/>
+                                    <constraint firstAttribute="height" constant="127" id="aNc-Hb-Idw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="77"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChZ-Kv-a2t" userLabel="Resst_Tap">
+                                <rect key="frame" x="284" y="486" width="80" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="IU5-8g-x6P"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.triangle.2.circlepath.circle" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4x-Ll-CEA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxt-bY-5wa" userLabel="Count_Tap">
+                                <rect key="frame" x="167" y="641.5" width="80" height="61.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4yF-wb-Uh5"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40" scale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="countTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WIz-cV-cyj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpW-nS-rlD" userLabel="Subtract_Tap">
+                                <rect key="frame" x="52" y="486" width="80" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2HH-T9-fTv"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.counterclockwise.circle" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="subtractTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r83-Jd-bq6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jpW-nS-rlD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="442" id="2ST-gb-NxD"/>
+                            <constraint firstItem="jpW-nS-rlD" firstAttribute="baseline" secondItem="ChZ-Kv-a2t" secondAttribute="baseline" id="6qI-YV-YtS"/>
+                            <constraint firstItem="jpW-nS-rlD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="Jfs-12-dR9"/>
+                            <constraint firstItem="ChZ-Kv-a2t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jpW-nS-rlD" secondAttribute="trailing" constant="8" symbolic="YES" id="O8b-xJ-IrA"/>
+                            <constraint firstItem="wdA-1L-Jsw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="Y5W-wz-ofD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ChZ-Kv-a2t" secondAttribute="trailing" constant="50" id="cEp-Mn-AOZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qxt-bY-5wa" secondAttribute="bottom" constant="159" id="iwm-SJ-Sns"/>
+                            <constraint firstItem="fSZ-9D-Ifr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="308" id="khT-zs-HqP"/>
+                            <constraint firstItem="fSZ-9D-Ifr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="klh-e4-CaX"/>
+                            <constraint firstItem="wdA-1L-Jsw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t9O-VX-77j"/>
+                            <constraint firstItem="qxt-bY-5wa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zEK-0W-3Ax"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLable" destination="fSZ-9D-Ifr" id="WCc-aX-udu"/>
+                        <outlet property="titleLable" destination="wdA-1L-Jsw" id="1yA-6k-yhz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.counterclockwise.circle" catalog="system" width="128" height="121"/>
+        <image name="arrow.triangle.2.circlepath.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
