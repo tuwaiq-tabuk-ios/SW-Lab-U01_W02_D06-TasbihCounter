@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TasbihCounter3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkN-sc-ms8">
+                                <rect key="frame" x="30" y="74" width="354" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SZ-JS-Xeu">
+                                <rect key="frame" x="30" y="228" width="354" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Ef1-Pw-xdI"/>
+                                    <constraint firstAttribute="height" constant="180" id="RLm-rJ-x1l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggw-vS-39q" userLabel="CounterPressed">
+                                <rect key="frame" x="140" y="612" width="134" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0Oi-Kc-7z4"/>
+                                    <constraint firstAttribute="width" constant="134" id="54z-a9-K3C" userLabel="width = 150"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" image="plus.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <action selector="CounterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AEn-J2-okl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOW-0A-7fI" userLabel="discountPressed">
+                                <rect key="frame" x="247" y="488" width="100" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="VA6-sJ-TjQ" userLabel="height = 70"/>
+                                    <constraint firstAttribute="width" constant="100" id="sLw-Df-9Fv"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" image="arrow.triangle.2.circlepath.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <action selector="discountPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gbn-aH-Uit"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2K-rz-Unc" userLabel="resetButton">
+                                <rect key="frame" x="87" y="487" width="97" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="11F-Ta-o3C" userLabel="height = 70"/>
+                                    <constraint firstAttribute="width" constant="81" id="zC1-rX-5Sk" userLabel="width = 100"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" image="arrow.uturn.left.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aub-O4-5LW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.85418713940000002" green="0.84077602230000004" blue="0.94562186290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SkN-sc-ms8" secondAttribute="trailing" constant="30" id="0yy-n8-iEp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yOW-0A-7fI" secondAttribute="trailing" constant="67" id="9Au-MD-aOc"/>
+                            <constraint firstItem="6SZ-JS-Xeu" firstAttribute="top" secondItem="SkN-sc-ms8" secondAttribute="bottom" constant="50" id="AZl-E5-50w"/>
+                            <constraint firstItem="6SZ-JS-Xeu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="LW0-Ua-xPc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ggw-vS-39q" secondAttribute="trailing" constant="141" id="MU4-og-Yf2"/>
+                            <constraint firstItem="yOW-0A-7fI" firstAttribute="top" secondItem="6SZ-JS-Xeu" secondAttribute="bottom" constant="80" id="Nrv-jx-TM3"/>
+                            <constraint firstItem="6SZ-JS-Xeu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QWQ-fo-3Fa"/>
+                            <constraint firstItem="SkN-sc-ms8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="T0m-jW-fy4"/>
+                            <constraint firstItem="ggw-vS-39q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="bs1-Wc-OHa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ggw-vS-39q" secondAttribute="bottom" constant="111" id="eMh-rB-Mb1"/>
+                            <constraint firstItem="ggw-vS-39q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="ixZ-K7-SoY"/>
+                            <constraint firstItem="6SZ-JS-Xeu" firstAttribute="top" secondItem="SkN-sc-ms8" secondAttribute="bottom" constant="70" id="kad-dV-jen"/>
+                            <constraint firstItem="F2K-rz-Unc" firstAttribute="top" secondItem="6SZ-JS-Xeu" secondAttribute="bottom" constant="80" id="oyR-r7-3sb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6SZ-JS-Xeu" secondAttribute="trailing" constant="30" id="tt3-CU-rMq"/>
+                            <constraint firstItem="yOW-0A-7fI" firstAttribute="leading" secondItem="F2K-rz-Unc" secondAttribute="trailing" constant="85" id="ybq-Yp-FOJ"/>
+                            <constraint firstItem="SkN-sc-ms8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="zFX-gi-sCF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DisplayLabel" destination="6SZ-JS-Xeu" id="HS4-VV-ufA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.triangle.2.circlepath.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.uturn.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
