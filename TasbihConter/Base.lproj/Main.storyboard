@@ -23,7 +23,7 @@
                                 <color key="textColor" systemColor="systemBrownColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-2i-zQo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-2i-zQo" userLabel="UpdateButton">
                                 <rect key="frame" x="340" y="512" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGray2Color"/>
@@ -32,10 +32,10 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="restpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8W-Wp-Yi3"/>
+                                    <action selector="restPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiG-ae-7qz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3r-E7-LwJ" userLabel="gobackwardButton">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3r-E7-LwJ" userLabel="backButton">
                                 <rect key="frame" x="29" y="492" width="88" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGray2Color"/>
@@ -44,7 +44,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="44"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="discountpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVX-9b-slw"/>
+                                    <action selector="discountPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U1d-AV-SEe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qc-n3-vvO" userLabel="conterButton">
@@ -56,10 +56,10 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="80" scale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="contarpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awG-8H-Z7D"/>
+                                    <action selector="countarPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bv0-vO-YmL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIn-rI-VAG">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIn-rI-VAG" userLabel="colrButton">
                                 <rect key="frame" x="36" y="809" width="97" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
@@ -68,7 +68,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="clolrpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLS-f6-8RZ"/>
+                                    <action selector="clolrPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLK-Fj-7RR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tasbih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ref-BK-DPA">
@@ -84,7 +84,7 @@
                         <color key="tintColor" systemColor="linkColor"/>
                     </view>
                     <connections>
-                        <outlet property="displaylable" destination="n7z-Tr-Xao" id="v3b-Sa-huf"/>
+                        <outlet property="disPlayLabel" destination="n7z-Tr-Xao" id="P2R-Qd-8Ad"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
