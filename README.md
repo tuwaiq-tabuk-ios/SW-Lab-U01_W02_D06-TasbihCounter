@@ -14,5 +14,13 @@ Second App consisting of a Tasbih counter.
 ## Description
 1. Create TasbihCounter App. 
 
+## Application Demo
+
+
+
+https://user-images.githubusercontent.com/88169750/136704989-1b279995-22bc-4a9f-81f3-3eda81b6366c.mp4
+
+
+
 ## Deadline 
 Monday 11th October 9:15 am
