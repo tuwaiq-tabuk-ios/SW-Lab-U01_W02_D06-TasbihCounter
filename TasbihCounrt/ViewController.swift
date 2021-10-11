@@ -10,59 +10,66 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var Zero: UILabel!
+    @IBOutlet weak var displayLabel: UILabel!
+    
+    
     
     var counter = 0
-  
-   let colorpicker = UIColorPickerViewController()
+    let colorpicker = UIColorPickerViewController()
     
-
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func LeftButton(_ sender:
-                              UIButton) {
+    
+    @IBAction func discountButton(_ sender:
+                                  UIButton) {
+        discountOneToCounter()
+    }
+    
+    @IBAction func ressetButton(_ sender: UIButton) {
+        resetCounter()
+    }
+    
+    @IBAction func counterButton(_ sender: UIButton) {
+        addOneToCounter()
+    }
+    
+    
+    
+    
+    func addOneToCounter() {
+        counter += 1
+        //     Zero.text = "5"
         
+        displayLabel.text = counter.description
+        
+        print(" Number\(String(describing: displayLabel.text))")
+    }
+    
+    
+    func discountOneToCounter() {
         if counter != 0
-            
-        
         {
+            counter -= 1
             
-            
-                
-                counter -= 1
-            
-                Zero.text = counter.description
+            displayLabel.text = counter.description
             
             print(" Number\(counter)")
-        
         }
-    }
-    @IBAction func colorButton(_ sender: Any) {
         
     }
-    @IBAction func RightButton(_ sender: UIButton) {
+    
+    
+    func resetCounter() {
         counter = 0
-    
-        Zero.text = counter.description
         
-        
+        displayLabel.text = counter.description
     }
     
-    @IBAction func LoopButton(_ sender: UIButton) {
-        counter += 1
-    //     Zero.text = "5"
-        
-        Zero.text = counter.description
-        
-        print(" Number\(String(describing: Zero.text))")
-        
-        
-        
-        
-    }
+    
     
 }
- 

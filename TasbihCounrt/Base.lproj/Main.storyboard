@@ -16,14 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8Q-Hx-bFQ" userLabel="Tasbih">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8Q-Hx-bFQ" userLabel="Title.Label">
                                 <rect key="frame" x="93" y="114" width="229" height="45.5"/>
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pt-rR-S7l">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pt-rR-S7l" userLabel="Display.Label">
                                 <rect key="frame" x="34" y="220" width="326" height="126.5"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -31,8 +31,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-Eq-9tR" userLabel="Left.Button">
-                                <rect key="frame" x="20" y="452" width="71" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-Eq-9tR" userLabel="Discount.Button">
+                                <rect key="frame" x="39" y="452" width="71" height="52"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -40,10 +40,10 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5E-st-zKF"/>
+                                    <action selector="discountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aT4-dE-SVg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdW-9a-9QU" userLabel="loop.Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdW-9a-9QU" userLabel="Count.Button">
                                 <rect key="frame" x="144" y="443" width="126" height="318"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
@@ -56,23 +56,10 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="74"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="LoopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xk4-T2-VCu"/>
+                                    <action selector="counterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="61i-ae-TeC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoA-sU-AkJ" userLabel="Color">
-                                <rect key="frame" x="45" y="771" width="103" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="applepencil" catalog="system" title="">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="64"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydK-Ve-HWb"/>
-                                    <action selector="colorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKX-Kt-afz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwa-Qq-tj9" userLabel="Right.Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwa-Qq-tj9" userLabel="Reset.Button">
                                 <rect key="frame" x="323" y="452" width="71" height="52"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -81,7 +68,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WsT-Ep-d7y"/>
+                                    <action selector="ressetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RhH-o1-ha1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,7 +93,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Zero" destination="3Pt-rR-S7l" id="CFf-xb-wxy"/>
+                        <outlet property="displayLabel" destination="3Pt-rR-S7l" id="xi5-g6-ujX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,7 +102,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="applepencil" catalog="system" width="128" height="113"/>
         <image name="arrow.2.circlepath.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.counterclockwise.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
