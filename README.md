@@ -16,3 +16,6 @@ Second App consisting of a Tasbih counter.
 
 ## Deadline 
 Monday 11th October 9:15 am
+# photo
+![Simulator Screen Shot - iPhone 13 Pro Max - 2021-10-10 at 16 39 36](https://user-images.githubusercontent.com/91871669/136762704-8856d54a-4bbe-4306-84d9-79ab655b4fb3.png)
+![Simulator Screen Shot - iPhone 13 Pro Max - 2021-10-10 at :Users:yousef:Desktop:Simulator Screen Shot - iPhone 13 Pro Max - 2021-10-10 at 16 39 36 png16 39 23](https://user-images.githubusercontent.com/91871669/136762712-24b0f0bf-0be3-4063-94ff-751c5c39671f.png)
