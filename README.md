@@ -1,6 +1,5 @@
 # SW-Lab-U01_W02_D06-TasbihCounter
 Second App consisting of a Tasbih counter.
-<img width="1281" alt="screenshot" src="https://user-images.githubusercontent.com/91871792/136710062-d1390def-a358-480c-84c5-2c12eeb3ff74.png">
 
 
 ## Topics
@@ -18,3 +17,8 @@ Second App consisting of a Tasbih counter.
 
 ## Deadline 
 Monday 11th October 9:15 am
+
+
+
+https://user-images.githubusercontent.com/91871792/136761334-76cac2ba-a91e-4475-9a50-42b7ef69e5fe.mp4
+
