@@ -8,40 +8,56 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var displayCounter: UILabel!
+    
+    
     var counter = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    
     @IBAction func discount(_ sender: UIButton) {
-        subOnToCounter()
+        subtractOnFromCounter()
     }
     
+    
     @IBAction func rest(_ sender: UIButton) {
-        removeOnToCounter()
+        removeOneFromCounter()
     }
+    
+    
     @IBAction func count(_ sender: UIButton) {
         addOnToCounter()
     }
+    
+    
     func addOnToCounter(){
         counter += 1
         displayCounter.text = counter.description
         print("Number displayed: \(counter)")
     }
-    func subOnToCounter(){
+    
+    
+    func subtractOnFromCounter(){
         if (counter > 0){
-        counter -= 1
+            counter -= 1
         }
         displayCounter.text = counter.description
         print("Number displayed: \(counter)")
     }
-    func removeOnToCounter(){
+    
+    
+    func removeOneFromCounter(){
         counter = 0
         displayCounter.text = counter.description
         print("Number displayed: \(counter)")
     }
+    
     
 }
 
