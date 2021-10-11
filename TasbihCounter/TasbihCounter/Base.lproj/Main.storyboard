@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +32,7 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                         </state>
                                         <connections>
-                                            <action selector="ResetButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyC-QV-Jkn"/>
+                                            <action selector="ResetButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7o-Bp-zcC"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-Lv-2ve" userLabel="Display_label">
@@ -54,10 +54,10 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                         </state>
                                         <connections>
-                                            <action selector="DiscountButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4u-oI-ovg"/>
+                                            <action selector="DiscountButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yWm-TR-MF1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tto-18-LWe" userLabel="Count_Button">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tto-18-LWe" userLabel="Count_Button">
                                         <rect key="frame" x="99.5" y="123" width="89" height="88"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tto-18-LWe" secondAttribute="height" multiplier="1:1" id="PHg-3X-tNk"/>
@@ -72,7 +72,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="CountButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Npc-9l-WsH"/>
+                                            <action selector="CountButtonPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NoG-yD-ml2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -108,13 +108,13 @@
                                         <rect key="frame" x="101" y="31" width="118" height="40"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxj-zO-0ef" userLabel="TitleTarget_label">
-                                                <rect key="frame" x="24" y="0.0" width="60" height="24"/>
+                                                <rect key="frame" x="24" y="0.0" width="60.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <color key="textColor" red="0.46830716940957273" green="0.46830716940957273" blue="0.46830716940957273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcu-nH-ABs" userLabel="Target_Button">
-                                                <rect key="frame" x="84" y="5" width="30" height="15"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcu-nH-ABs" userLabel="Target_Button">
+                                                <rect key="frame" x="84.5" y="5" width="30" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="LjO-KA-dsd"/>
                                                 </constraints>
@@ -173,6 +173,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="410-0y-OwW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTu-bg-Y8E"/>
@@ -187,7 +188,6 @@
                             <constraint firstItem="z1c-JU-Zz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="wF2-dH-mnx"/>
                             <constraint firstItem="410-0y-OwW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zQQ-qB-cho"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Target_Button" destination="kcu-nH-ABs" id="WgY-3s-0YP"/>
@@ -243,6 +243,7 @@ The sponsor is Ignasi Perez-Valls.</string>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="pNq-WO-Cdh"/>
                         <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588234" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pNq-WO-Cdh" firstAttribute="trailing" secondItem="cUm-A0-lAJ" secondAttribute="trailing" constant="8" id="9EO-zk-let"/>
@@ -256,7 +257,6 @@ The sponsor is Ignasi Perez-Valls.</string>
                             <constraint firstItem="cUm-A0-lAJ" firstAttribute="top" secondItem="pNq-WO-Cdh" secondAttribute="top" constant="20" id="eIx-hK-UZU"/>
                             <constraint firstItem="s10-Bm-v91" firstAttribute="top" secondItem="vvQ-RG-UP9" secondAttribute="bottom" constant="68" id="ov3-PJ-ezx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pNq-WO-Cdh"/>
                     </view>
                     <navigationItem key="navigationItem" id="NFg-Ct-jVC"/>
                 </viewController>
@@ -266,11 +266,11 @@ The sponsor is Ignasi Perez-Valls.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.2.circlepath.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="arrow.uturn.left.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="info.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="plus.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="xmark.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="arrow.2.circlepath.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="arrow.uturn.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
