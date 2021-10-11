@@ -35,7 +35,6 @@ class ViewController: UIViewController {
   
   
   var displayTarget = ""
-  
   var redColor = false
   var blueColor = false
   
@@ -45,25 +44,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
   }
   
-  @IBAction func targetButtonPreased(_ sender: Any) {
-    
-    //        print("Target Button Taped!")
-    let alert = UIAlertController(title: "Target", message: "Please set the desired value for alert:", preferredStyle: .alert)
-    
-    
-    alert.addTextField { (textField) in
-      textField.text = "0"
-    }
-    
-    
-    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-      let textField = alert?.textFields![0]
-      self.target_Button.setTitle(textField!.text!, for: .normal)
-      self.displayTarget = textField!.text!
-      
-    }))
-    
-    self.present(alert, animated: true, completion: nil)
+  @IBAction func targetButtonPressed(_ sender: Any) {
+    showAlertForTargetButon()
   }
   
   @IBAction func discountButtonPreased(_ sender: Any) {
@@ -113,7 +95,9 @@ class ViewController: UIViewController {
   }
   
   
-  func addOneToCounter () {
+  
+  
+  func addOneToCounter() {
     //        print("Count Button Taped!")
     let OldCount = Int(displayLabel.text!)
     
@@ -144,7 +128,7 @@ class ViewController: UIViewController {
       colorButton.tintColor = UIColor(hex: 0x4b2c20)
       infoButton.tintColor = UIColor(hex: 0x4b2c20)
       
-    }else if !blueColor {
+    } else if !blueColor {
       blueColor = true
       viewItems.backgroundColor = UIColor(hex: 0x1c313a)
       self.view.backgroundColor = UIColor(hex: 0x455a64)
@@ -155,7 +139,7 @@ class ViewController: UIViewController {
       resetButton.tintColor = UIColor(hex: 0x455a64)
       colorButton.tintColor = UIColor(hex: 0x1c313a)
       infoButton.tintColor = UIColor(hex: 0x1c313a)
-    }else{
+    } else {
       redColor = false
       blueColor = false
       viewItems.backgroundColor = UIColor(hex: 0xad0018)
@@ -168,8 +152,31 @@ class ViewController: UIViewController {
       colorButton.tintColor = UIColor(hex: 0xad0018)
       infoButton.tintColor = UIColor(hex: 0xad0018)
       
-      
     }
+  }
+  
+  
+  func showAlertForTargetButon() {
+    //        print("Target Button Taped!")
+    let alert = UIAlertController(title: "Target",
+                                  message: "Please set the desired value for alert:",
+                                  preferredStyle: .alert)
+    
+    
+    alert.addTextField { (textField) in
+      textField.text = "0"
+    }
+    
+    
+    alert.addAction(UIAlertAction(title: "OK", style: .default,
+                                  handler: { [weak alert] (_) in
+      let textField = alert?.textFields![0]
+      self.target_Button.setTitle(textField!.text!, for: .normal)
+      self.displayTarget = textField!.text!
+      
+    }))
+    
+    self.present(alert, animated: true, completion: nil)
   }
   
 }

@@ -19,7 +19,6 @@ Second App consisting of a Tasbih counter.
 </div>
 
 
-
 ## Topics
 1. Storyboard
 2. UIKit
