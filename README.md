@@ -18,7 +18,6 @@ Second App consisting of a Tasbih counter.
 Monday 11th October 9:15 am
 
 ## screnshot 
-<img width="500" alt="Screen Shot 1443-03-04 at 22 47 37" src="https://user-images.githubusercontent.com/85367931/136711820-a206d89e-c9ac-475e-bd9e-6a94e3e365b7.png">
 
 
 
