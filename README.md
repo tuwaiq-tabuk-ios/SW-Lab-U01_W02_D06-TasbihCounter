@@ -4,7 +4,10 @@ Second App consisting of a Tasbih counter.
 
 ## Video
 
-https://github.com/maloqbi/SW-Lab-U01_W02_D06-TasbihCounter/raw/main/1.mp4
+
+https://user-images.githubusercontent.com/91871371/136743697-7f15817b-8f02-4b0c-8bbc-fdd038b835ed.mp4
+
+
 
 ## Screenshot
 <div>
