@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  TasbihCounter
+//  Tasbih Counter
 //
 //  Created by Ameera BA on 11/10/2021.
 //

@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20906D562713AEC800985FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20906D552713AEC800985FED /* AppDelegate.swift */; };
-		20906D582713AEC800985FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20906D572713AEC800985FED /* SceneDelegate.swift */; };
-		20906D5A2713AEC800985FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20906D592713AEC800985FED /* ViewController.swift */; };
-		20906D5D2713AEC800985FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20906D5B2713AEC800985FED /* Main.storyboard */; };
-		20906D5F2713AECA00985FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20906D5E2713AECA00985FED /* Assets.xcassets */; };
-		20906D622713AECA00985FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20906D602713AECA00985FED /* LaunchScreen.storyboard */; };
+		2084E5092714256F001A8645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084E5082714256F001A8645 /* AppDelegate.swift */; };
+		2084E50B2714256F001A8645 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084E50A2714256F001A8645 /* SceneDelegate.swift */; };
+		2084E50D2714256F001A8645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2084E50C2714256F001A8645 /* ViewController.swift */; };
+		2084E5102714256F001A8645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2084E50E2714256F001A8645 /* Main.storyboard */; };
+		2084E51227142571001A8645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2084E51127142571001A8645 /* Assets.xcassets */; };
+		2084E51527142571001A8645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2084E51327142571001A8645 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		20906D522713AEC800985FED /* TasbihCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasbihCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		20906D552713AEC800985FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20906D572713AEC800985FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20906D592713AEC800985FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		20906D5C2713AEC800985FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		20906D5E2713AECA00985FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		20906D612713AECA00985FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		20906D632713AECA00985FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2084E5052714256F001A8645 /* Tasbih Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tasbih Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2084E5082714256F001A8645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2084E50A2714256F001A8645 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2084E50C2714256F001A8645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2084E50F2714256F001A8645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2084E51127142571001A8645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2084E51427142571001A8645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2084E51627142571001A8645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		20906D4F2713AEC800985FED /* Frameworks */ = {
+		2084E5022714256F001A8645 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20906D492713AEC800985FED = {
+		2084E4FC2714256F001A8645 = {
 			isa = PBXGroup;
 			children = (
-				20906D542713AEC800985FED /* TasbihCounter */,
-				20906D532713AEC800985FED /* Products */,
+				2084E5072714256F001A8645 /* Tasbih Counter */,
+				2084E5062714256F001A8645 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		20906D532713AEC800985FED /* Products */ = {
+		2084E5062714256F001A8645 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20906D522713AEC800985FED /* TasbihCounter.app */,
+				2084E5052714256F001A8645 /* Tasbih Counter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		20906D542713AEC800985FED /* TasbihCounter */ = {
+		2084E5072714256F001A8645 /* Tasbih Counter */ = {
 			isa = PBXGroup;
 			children = (
-				20906D552713AEC800985FED /* AppDelegate.swift */,
-				20906D572713AEC800985FED /* SceneDelegate.swift */,
-				20906D592713AEC800985FED /* ViewController.swift */,
-				20906D5B2713AEC800985FED /* Main.storyboard */,
-				20906D5E2713AECA00985FED /* Assets.xcassets */,
-				20906D602713AECA00985FED /* LaunchScreen.storyboard */,
-				20906D632713AECA00985FED /* Info.plist */,
+				2084E5082714256F001A8645 /* AppDelegate.swift */,
+				2084E50A2714256F001A8645 /* SceneDelegate.swift */,
+				2084E50C2714256F001A8645 /* ViewController.swift */,
+				2084E50E2714256F001A8645 /* Main.storyboard */,
+				2084E51127142571001A8645 /* Assets.xcassets */,
+				2084E51327142571001A8645 /* LaunchScreen.storyboard */,
+				2084E51627142571001A8645 /* Info.plist */,
 			);
-			path = TasbihCounter;
+			path = "Tasbih Counter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20906D512713AEC800985FED /* TasbihCounter */ = {
+		2084E5042714256F001A8645 /* Tasbih Counter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20906D662713AECA00985FED /* Build configuration list for PBXNativeTarget "TasbihCounter" */;
+			buildConfigurationList = 2084E51927142571001A8645 /* Build configuration list for PBXNativeTarget "Tasbih Counter" */;
 			buildPhases = (
-				20906D4E2713AEC800985FED /* Sources */,
-				20906D4F2713AEC800985FED /* Frameworks */,
-				20906D502713AEC800985FED /* Resources */,
+				2084E5012714256F001A8645 /* Sources */,
+				2084E5022714256F001A8645 /* Frameworks */,
+				2084E5032714256F001A8645 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TasbihCounter;
-			productName = TasbihCounter;
-			productReference = 20906D522713AEC800985FED /* TasbihCounter.app */;
+			name = "Tasbih Counter";
+			productName = "Tasbih Counter";
+			productReference = 2084E5052714256F001A8645 /* Tasbih Counter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		20906D4A2713AEC800985FED /* Project object */ = {
+		2084E4FD2714256F001A8645 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					20906D512713AEC800985FED = {
+					2084E5042714256F001A8645 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 20906D4D2713AEC800985FED /* Build configuration list for PBXProject "TasbihCounter" */;
+			buildConfigurationList = 2084E5002714256F001A8645 /* Build configuration list for PBXProject "Tasbih Counter" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 20906D492713AEC800985FED;
-			productRefGroup = 20906D532713AEC800985FED /* Products */;
+			mainGroup = 2084E4FC2714256F001A8645;
+			productRefGroup = 2084E5062714256F001A8645 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20906D512713AEC800985FED /* TasbihCounter */,
+				2084E5042714256F001A8645 /* Tasbih Counter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		20906D502713AEC800985FED /* Resources */ = {
+		2084E5032714256F001A8645 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20906D622713AECA00985FED /* LaunchScreen.storyboard in Resources */,
-				20906D5F2713AECA00985FED /* Assets.xcassets in Resources */,
-				20906D5D2713AEC800985FED /* Main.storyboard in Resources */,
+				2084E51527142571001A8645 /* LaunchScreen.storyboard in Resources */,
+				2084E51227142571001A8645 /* Assets.xcassets in Resources */,
+				2084E5102714256F001A8645 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		20906D4E2713AEC800985FED /* Sources */ = {
+		2084E5012714256F001A8645 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20906D5A2713AEC800985FED /* ViewController.swift in Sources */,
-				20906D562713AEC800985FED /* AppDelegate.swift in Sources */,
-				20906D582713AEC800985FED /* SceneDelegate.swift in Sources */,
+				2084E50D2714256F001A8645 /* ViewController.swift in Sources */,
+				2084E5092714256F001A8645 /* AppDelegate.swift in Sources */,
+				2084E50B2714256F001A8645 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		20906D5B2713AEC800985FED /* Main.storyboard */ = {
+		2084E50E2714256F001A8645 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				20906D5C2713AEC800985FED /* Base */,
+				2084E50F2714256F001A8645 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		20906D602713AECA00985FED /* LaunchScreen.storyboard */ = {
+		2084E51327142571001A8645 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				20906D612713AECA00985FED /* Base */,
+				2084E51427142571001A8645 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		20906D642713AECA00985FED /* Debug */ = {
+		2084E51727142571001A8645 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		20906D652713AECA00985FED /* Release */ = {
+		2084E51827142571001A8645 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +282,7 @@
 			};
 			name = Release;
 		};
-		20906D672713AECA00985FED /* Debug */ = {
+		2084E51A27142571001A8645 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8KR6LU68Z5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TasbihCounter/Info.plist;
+				INFOPLIST_FILE = "Tasbih Counter/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ameera.TasbihCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ameera.Tasbih-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		20906D682713AECA00985FED /* Release */ = {
+		2084E51B27142571001A8645 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8KR6LU68Z5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TasbihCounter/Info.plist;
+				INFOPLIST_FILE = "Tasbih Counter/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ameera.TasbihCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ameera.Tasbih-Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20906D4D2713AEC800985FED /* Build configuration list for PBXProject "TasbihCounter" */ = {
+		2084E5002714256F001A8645 /* Build configuration list for PBXProject "Tasbih Counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20906D642713AECA00985FED /* Debug */,
-				20906D652713AECA00985FED /* Release */,
+				2084E51727142571001A8645 /* Debug */,
+				2084E51827142571001A8645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20906D662713AECA00985FED /* Build configuration list for PBXNativeTarget "TasbihCounter" */ = {
+		2084E51927142571001A8645 /* Build configuration list for PBXNativeTarget "Tasbih Counter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20906D672713AECA00985FED /* Debug */,
-				20906D682713AECA00985FED /* Release */,
+				2084E51A27142571001A8645 /* Debug */,
+				2084E51B27142571001A8645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 20906D4A2713AEC800985FED /* Project object */;
+	rootObject = 2084E4FD2714256F001A8645 /* Project object */;
 }
