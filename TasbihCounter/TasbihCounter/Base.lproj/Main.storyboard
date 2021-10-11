@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TasbihCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skoor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="80" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVN-55-4Lo">
+                                <rect key="frame" x="0.0" y="0.0" width="311" height="73"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="61"/>
+                                <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                <color key="highlightedColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0W-ci-gec">
+                                <rect key="frame" x="76" y="96" width="158" height="116"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="97"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="highlightedColor" name="AccentColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7er-5k-IdU" userLabel="Contar-Reset_button">
+                                <rect key="frame" x="0.0" y="436.5" width="320" height="133"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="100" scale="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="contarPresad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Phb-IB-yhp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prt-bZ-16k" userLabel="Reset_button">
+                                <rect key="frame" x="218" y="293" width="93" height="73.5"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetPresad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaZ-uq-Nf5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJq-zb-BeX" userLabel="discount_buttom">
+                                <rect key="frame" x="0.0" y="281" width="76.5" height="73.5"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.counterclockwise" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="medium"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="discountPreased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOK-gd-mUh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Prt-bZ-16k" secondAttribute="trailing" constant="9" id="2XY-sz-CSm"/>
+                            <constraint firstItem="Prt-bZ-16k" firstAttribute="top" secondItem="f0W-ci-gec" secondAttribute="bottom" constant="81" id="8hZ-wC-R75"/>
+                            <constraint firstItem="f0W-ci-gec" firstAttribute="top" secondItem="SVN-55-4Lo" secondAttribute="bottom" constant="23" id="DlY-HO-RQ7"/>
+                            <constraint firstItem="SVN-55-4Lo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I68-tJ-7Nr"/>
+                            <constraint firstItem="SVN-55-4Lo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IB0-gh-VYj"/>
+                            <constraint firstItem="f0W-ci-gec" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="JU0-df-i3u"/>
+                            <constraint firstItem="7er-5k-IdU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P2Y-D6-uDr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f0W-ci-gec" secondAttribute="trailing" constant="86" id="PFt-8S-Xdk"/>
+                            <constraint firstItem="7er-5k-IdU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SFU-i0-Qsf"/>
+                            <constraint firstItem="7er-5k-IdU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ebT-vV-jzc"/>
+                            <constraint firstItem="7er-5k-IdU" firstAttribute="top" secondItem="Prt-bZ-16k" secondAttribute="bottom" constant="70" id="egb-Bv-n2g"/>
+                            <constraint firstItem="EJq-zb-BeX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mZ8-1f-NFE"/>
+                            <constraint firstItem="EJq-zb-BeX" firstAttribute="top" secondItem="f0W-ci-gec" secondAttribute="bottom" constant="69" id="n23-ja-aZq"/>
+                            <constraint firstItem="7er-5k-IdU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nzI-Hc-OOr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SVN-55-4Lo" secondAttribute="trailing" constant="9" id="sIc-r8-szh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Prt-bZ-16k" secondAttribute="trailing" constant="9" id="tPp-uo-PF5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="display_laipl" destination="f0W-ci-gec" id="Ndj-wS-Mre"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.75" y="85.563380281690144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
