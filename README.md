@@ -16,3 +16,4 @@ Second App consisting of a Tasbih counter.
 
 ## Deadline 
 Monday 11th October 9:15 am
+![Simulator Screen Shot - iPhone 12 - 2021-10-11 at 16 55 13](https://user-images.githubusercontent.com/91871691/136853253-a5975cb0-ff4a-43b8-99fc-cb5685206a2e.png)
