@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TasbihCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbih " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrs-q1-ctc" userLabel="Tasbih">
+                                <rect key="frame" x="108.33333333333333" y="53.999999999999993" width="197.33333333333337" height="75.333333333333314"/>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="68"/>
+                                <color key="textColor" red="0.82770000539999999" green="0.69927934349999998" blue="0.51560529420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzp-KV-HV0" userLabel="resetcounter">
+                                <rect key="frame" x="239" y="459" width="118" height="77.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" weight="bold"/>
+                                    <color key="baseForegroundColor" red="0.94862948120000001" green="0.97405010459999997" blue="0.84293100580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Oi-A7-bvg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-z3-zHH" userLabel="pluscounter">
+                                <rect key="frame" x="99" y="608" width="216" height="123.33333333333337"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="80" weight="bold"/>
+                                    <color key="baseForegroundColor" red="0.94862948120000001" green="0.97405010459999997" blue="0.84293100580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="counterpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyg-Ic-hKT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juo-VS-arO" userLabel="counter">
+                                <rect key="frame" x="162.33333333333334" y="229.33333333333337" width="89.333333333333343" height="175.66666666666663"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="147"/>
+                                <color key="textColor" red="0.96848052740000001" green="0.88177390180000004" blue="0.611828908" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rr-hD-ngZ" userLabel="discounter">
+                                <rect key="frame" x="82" y="459" width="83" height="80.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.counterclockwise" catalog="system" imagePlacement="bottom" title="">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" weight="bold"/>
+                                    <color key="baseForegroundColor" red="0.94862948120000001" green="0.97405010459999997" blue="0.84293100580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="discountpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSz-9k-fKt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.54269179720000005" green="0.54161471530000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="b1E-z3-zHH" firstAttribute="top" secondItem="juo-VS-arO" secondAttribute="bottom" constant="203" id="Gye-Xu-oh0"/>
+                            <constraint firstItem="b1E-z3-zHH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="ONj-9E-D6s"/>
+                            <constraint firstItem="1Rr-hD-ngZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="OSa-Bm-Ax9"/>
+                            <constraint firstItem="Rrs-q1-ctc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDc-xS-feC"/>
+                            <constraint firstItem="juo-VS-arO" firstAttribute="top" secondItem="Rrs-q1-ctc" secondAttribute="bottom" constant="100" id="SOG-3d-wIk"/>
+                            <constraint firstItem="b1E-z3-zHH" firstAttribute="top" secondItem="1Rr-hD-ngZ" secondAttribute="bottom" constant="68.329999999999998" id="cY2-0T-FM0"/>
+                            <constraint firstItem="juo-VS-arO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ggT-Ta-QJ4"/>
+                            <constraint firstItem="tzp-KV-HV0" firstAttribute="leading" secondItem="1Rr-hD-ngZ" secondAttribute="trailing" constant="74" id="iaZ-vW-8SJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tzp-KV-HV0" secondAttribute="trailing" constant="57" id="nMR-wF-zio"/>
+                            <constraint firstItem="tzp-KV-HV0" firstAttribute="top" secondItem="Rrs-q1-ctc" secondAttribute="bottom" constant="329.67000000000002" id="ooa-YT-FLz"/>
+                            <constraint firstItem="1Rr-hD-ngZ" firstAttribute="top" secondItem="Rrs-q1-ctc" secondAttribute="bottom" constant="329.67000000000002" id="pdT-dk-F2D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b1E-z3-zHH" secondAttribute="trailing" constant="99" id="qfw-4n-MbK"/>
+                            <constraint firstItem="Rrs-q1-ctc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="xBW-Qo-fXF"/>
+                            <constraint firstItem="Rrs-q1-ctc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z8Z-YG-wcS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displaylabel" destination="juo-VS-arO" id="kLg-TH-ZZA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252.17391304347828" y="2.6785714285714284"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="s5u-9g-Vhm">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="RHl-Bf-RHS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fn-fN-kO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636" y="-670"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
