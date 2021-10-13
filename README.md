@@ -16,3 +16,4 @@ Second App consisting of a Tasbih counter.
 
 ## Deadline 
 Monday 11th October 9:15 am
+<img width="393" alt="Screen Shot 1443-03-05 at 5 15 22 PM" src="https://user-images.githubusercontent.com/91871708/137070946-93ebadd7-9d27-480a-8361-629431744327.png">
